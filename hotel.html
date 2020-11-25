@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-free-5.14.0-web\css\all.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/hotel.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital@1&display=swap">
+	<title> Hotel</title></head>
+<body>
+    <div class="container_fluid">
+        <nav class="navbar navbar-dark bg-dark navbar-light bg-light" style="padding: 25px;">
+            <div class=><img src="img/Logo.PNG" ></div>
+            <ul class=" nav justify-content-end  d-md-flex d-none">
+                <li class="nav-item nav-tabs">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./rooms.html">Rooms</a>
+                </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-toogle dropdown-toggle" data-toggle="dropdown" href="./pages/pages.html" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="./about.html">About</a>
+                          <a class="dropdown-item" href="./rooms.html">Rooms </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="./services.html">Service </a>
+                        </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+              </ul>
+            <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./hotel.html">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./rooms.html">Rooms</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Pages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="./about.html">About</a>
+                          <a class="dropdown-item" href="./rooms.html">Rooms </a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="./services.html">Service </a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./news.html">News</a>
+                </li>
+                </ul>
+              </div>
+              <a href="#" class="primary-btn d-lg-flex d-none">Make a Reservation</a>
+          </nav>
+    </div>
+    <!--start sec 2-->
+    <section class="hero-area set-bg" data-setbg="img/hero-bg.jpg" style="background-image: url(&quot;img/hero-bg.jpg&quot;); background-size: cover;">
+      <div class="container">
+      <div class="row">
+      <div class="col-lg-12 text-center">
+      <div class="hero-text">
+      <h1>A Luxury Stay</h1>
+      </div>
+      </div>
+      </div>
+      </div>
+      </section>
+      <!--start sec 3-->
+      <section class="search-filter">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-12">
+        <form action="#" class="check-form">
+        <h4>Check Availability</h4>
+        <div class="datepicker">
+        <p>From</p>
+        <input type="date">
+        </div>
+        <div class="datepicker">
+        <p>To</p>
+        <input type="date">
+        </div>
+        <div class="room-quantity">
+        <div class="single-quantity">
+        <p>Adults</p>
+        <div class="pro-qty">
+          <span id="subone" class="dec qtybtn">-</span>
+          <span id="number">0</span>
+          <span id="addone" class="inc qtybtn">+</span>
+        </div>
+        </div>
+        <div class="single-quantity">
+        <p>Children</p>
+        <div class="pro-qty">
+          <span id="subone1" class="dec qtybtn">-</span>
+          <span id="number1">0</span>
+          <span id="addone1" class="inc qtybtn">+</span>
+        </div>
+        </div>
+        <div class="single-quantity last">
+        <p>Rooms</p>
+        <div class="pro-qty">
+          <span id="subone2" class="dec qtybtn">-</span>
+          <span id="number2">0</span>
+          <span id="addone2" class="inc qtybtn">+</span>
+        </div>
+      </div>
+        </div>
+        <div class="room-selector">
+        <p>Room</p>
+          <div class="dropdown drop-d">
+          <a class="btn btn-secondary dropdown-toggle drd-t" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Eg. Master suite
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item active" href="#">Eg. Master suite</a>
+          <a class="dropdown-item" href="#">Double Room</a>
+          <a class="dropdown-item" href="#">Single Room</a>
+          <a class="dropdown-item" href="#">Special Room</a>
+          </div>
+          </div>
+        </div>
+        <button type="submit">Go</button>
+        </form>
+        </div>
+        </div>
+        </div>
+        </section>
+        <!--start sec 4-->
+        <section class="intro-section spad">
+          <div class="container">
+          <div class="row intro-text">
+          <div class="col-lg-6">
+          <div class="intro-left">
+          <div class="section-title">
+          <span>a memorable holliday</span>
+          <h2>A great stay in a<br> lovely hotel.</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+          viverra maecenas. Donec in sodales dui, a blandit nunc. Pellentesque id eros venenatis,
+          sollicitudin neque sodales, vehicula nibh. Nam massa odio, porttitor vitae efficitur non,
+          ultricies volutpat tellus.</p>
+          </div>
+          </div>
+          <div class="col-lg-6">
+          <div class="intro-right">
+          <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra.</p>
+          <a href="#" class="primary-btn">Make a Reservation</a>
+          </div>
+          </div>
+          </div>
+          </div>
+          </section>
+          <!--start sec 5-->
+          <section class="facilities-section">
+            <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-6">
+            <div class="facilities-item set-bg" data-setbg="img/faci-1.jpg" style="background-image: url(&quot;img/faci-1.jpg&quot;);">
+            <div class="fi-title">
+            <h2>Luxury Suite Room</h2>
+            <p>From $399</p>
+            </div>
+            <div class="fi-features">
+            <div class="fi-info">
+              <i class="fas fa-tv"></i>
+            <p>Smart TV</p>
+            </div>
+            <div class="fi-info">
+              <i class="fas fa-wifi"></i>
+            <p>High Wi-fii</p>
+            </div>
+            <div class="fi-info">
+              <i class="fas fa-fan"></i>
+            <p>AC</p>
+            </div>
+            <div class="fi-info">
+              <i class="fas fa-parking"></i>
+            <p>Parking</p>
+            </div>
+            <div class="fi-info">
+              <i class="fas fa-swimmer"></i>
+            <p>Pool</p>
+            </div>
+            </div>
+            <a href="#" class="primary-btn">Make a Reservation</a>
+            </div>
+            </div>
+            <div class="col-lg-6">
+            <div class="facilities-item set-bg fi-right" data-setbg="img/faci-2.jpg" style="background-image: url(&quot;img/faci-2.jpg&quot;);">
+            <div class="fi-title">
+            <h2>Infinity Pool</h2>
+            <p>For all our guests</p>
+            </div>
+            <a href="#" class="primary-btn">Make a Reservation</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </section>
+            <!--start sec 6-->
+            <section class="testimonial-section spad">
+              <div class="container">
+              <div class="row">
+              <div class="section-title">
+              <h2>Guestbook</h2>
+              </div>
+              </div>
+              <div class="row">
+              <div class="col-lg-6">
+              <div class="testimonial-item">
+              <div class="ti-time">
+              02 / 02 / 2019
+              </div>
+              <h4>We loved our stay</h4>
+              <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiselit. Vivamus libero mauris, bibendum eget
+              sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare.</p>
+              <div class="ti-author">
+              <div class="author-pic">
+              <img src="img/author-1.png.webp">
+              </div>
+              <div class="author-text">
+              <h6>JOHN DOE <span>Madrid</span></h6>
+              </div>
+              </div>
+              </div>
+              </div>
+              <div class="col-lg-6">
+              <div class="testimonial-item">
+              <div class="ti-time">
+              02 / 02 / 2019
+              </div>
+              <h4>I will come back again</h4>
+              <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              </div>
+              <p>Ipsum dolor sit amet, consectetur adipiselit. Vivamus libero mauris, bibendum eget sapien ac,
+              ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare.</p>
+              <div class="ti-author">
+              <div class="author-pic">
+              <img src="img/author-2.png.webp">
+              </div>
+              <div class="author-text">
+              <h6>Maria Smith <span>Madrid</span></h6>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </div>
+              </section>
+              <!--start sec 7-->
+              <div class="video-section">
+                <div class="video-bg set-bg" data-setbg="img/video-bg.jpg" style="background-image: url(&quot;img/video-bg.jpg&quot;);"></div>
+                <div class="container">
+                <div class="video-text set-bg" data-setbg="img/video-inside-bg.jpg" style="background-image: url(&quot;img/video-inside-bg.jpg&quot;);">
+                <a href="https://www.youtube.com/watch?v=j56YlCXuPFU" class="pop-up"><i class="fa fa-play"></i></a>
+                </div>
+                </div>
+                </div>
+                <!--start sec 8-->
+                <section class="homepage-about spad">
+                  <div class="container">
+                  <div class="row">
+                  <div class="col-lg-6">
+                  <div class="about-text">
+                  <div class="section-title">
+                  <h2>“Customers love our <br>facilities”</h2>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus libero mauris, bibendum eget
+                  sapien ac, ultrices rhoncus ipsum. Donec nec sapien in urna fermentum ornare. Morbi vel
+                  ultrices leo. Sed eu turpis eu arcu vehicula fringilla ut vitae orci. Suspendisse maximus
+                  malesuada. </p>
+                  <a href="#" class="primary-btn">Make a Reservation</a>
+                  </div>
+                  </div>
+                  <div class="col-lg-6">
+                  <div class="row">
+                  <div class="col-sm-6">
+                  <div class="about-img">
+                  <img src="img/home-about-1.jpg.webp">
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                  <div class="about-img">
+                  <img src="img/home-about-2.jpg.webp">
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                  <div class="about-img">
+                  <img src="img/home-about-3.jpg.webp">
+                  </div>
+                  </div>
+                  <div class="col-sm-6">
+                  <div class="about-img">
+                  <img src="img/home-about-4.jpg.webp">
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </div>
+                  </section>
+                  <!--start footer-->
+                  <footer class="footer-section">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-lg-4">
+                    <div class="footer-item">
+                    <div class="footer-logo">
+                    <a href="#"><img src="img/logo.png"></a>
+                    </div>
+                    <p>Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua.</p>
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <div class="footer-item">
+                    <h5>Newsletter</h5>
+                    <div class="newslatter-form">
+                    <input type="text" placeholder="Your Email Here">
+                    <button type="submit">Subscribe</button>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-4">
+                    <div class="footer-item">
+                    <h5>Contact Info</h5>
+                    <ul>
+                    <li><img src="img/placeholder.png.webp">1525 Boring Lane,<br>Los Angeles, CA</li>
+                    <li><img src="img/phone.png.webp">+1 (603)535-4592</li>
+                    </ul>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="copyright">
+                    <div class="container">
+                    <div class="row">
+                    <div class="col-lg-12">
+                    <ul>
+                    <li class="active"><a href="./hotel.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./rooms.html">Rooms</a></li>
+                    <li><a href="./services.html">Facilities</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                    </div>
+                    </div>
+                    <div class="row pt-5">
+                    <div class="col-lg-12 ">
+                    <div class="small text-white text-center">
+                    Copyright ©2020 All rights reserved | This template is made with <i class="fas fa-heart" aria-hidden="true"></i> by <a class="cbl" href="#" target="_blank">Colorlib</a>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </footer>
+
+	<script src="./js/jquery-3.5.1.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+  <script src="./js/hotel.js"></script>
+
+</body>
+</html>
